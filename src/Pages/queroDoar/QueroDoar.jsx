@@ -12,7 +12,6 @@ export default function QueroDoar()
                     <img src={Book} alt="" />
                     <p>Informações do Livro</p>
                 </section>
-
                 <form className={s.myForm}>
                     <input className={s.info} type="text" placeholder='Título'/>
                     <input className={s.info} type="text" placeholder='Categoria'/>
