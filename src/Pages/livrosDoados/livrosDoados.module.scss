@@ -37,14 +37,16 @@
         display: flex;
         align-items: center;
         width: 100vw;
-        padding-bottom: 50%;
-        justify-content: space-around;
+        padding-bottom: 40%;
+        justify-content: space-evenly;
+        flex-direction: column;
         padding-left: 0;
         padding-bottom: 15%;
         margin: 0;
     }
     .cardLivro
     {
+        margin-top: 10px;
         width: 60vw;
     }
 }
