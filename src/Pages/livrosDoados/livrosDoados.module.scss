@@ -1,0 +1,50 @@
+.title
+{
+    text-align: center;
+    height: 10vh;
+    padding-top: 20px;
+}
+.cardLivrosDoados //card referente a todos os livros doados
+{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+.cardLivro //card referente ao livro doado, 
+            //as informações, autor, título, img
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15vw;
+    height: 35vh;
+    flex-direction: column;
+    border: 2px solid #005695;;
+    border-radius: 10px;
+}
+@media (max-width: 768px)
+{
+    .title
+    {
+        padding-top: 15%;
+        height: 20vh;
+    }
+    .cardLivrosDoados
+    {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        padding-bottom: 50%;
+        justify-content: space-around;
+        padding-left: 0;
+        padding-bottom: 15%;
+        margin: 0;
+    }
+    .cardLivro
+    {
+        width: 60vw;
+    }
+}
