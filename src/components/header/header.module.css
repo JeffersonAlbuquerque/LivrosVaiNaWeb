@@ -81,4 +81,9 @@
   .barraDeBusca {
     display: none;
   }
+}
+@media (max-width: 375px) {
+  .logoHeader {
+    height: 15vh;
+  }
 }/*# sourceMappingURL=header.module.css.map */

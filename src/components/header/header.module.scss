@@ -94,21 +94,16 @@
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     .barraDeBusca
     {
         display: none;
+    }
+}
+@media (max-width: 375px)
+{
+    .logoHeader
+    {
+        //border: 2px solid red;
+        height: 15vh;
     }
 }

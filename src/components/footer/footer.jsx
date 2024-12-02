@@ -11,7 +11,6 @@ export default function()
         <section>
             <footer>
                 <section className={s.contact}>
-
                     <p className={s.tel}>4002-8922</p>
 
                     <section className={s.socialMedia}>

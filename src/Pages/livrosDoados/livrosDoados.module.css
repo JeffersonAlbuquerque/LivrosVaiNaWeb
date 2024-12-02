@@ -42,4 +42,10 @@
   .cardLivro {
     width: 60vw;
   }
+}
+@media (max-width: 375px) {
+  .cardLivro {
+    width: 50vw;
+    height: 40vh;
+  }
 }/*# sourceMappingURL=livrosDoados.module.css.map */

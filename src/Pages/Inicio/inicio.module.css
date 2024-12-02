@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .BackgroundMain {
   background-image: url("../../assets/backgroundMain.png");
   background-repeat: no-repeat;
@@ -74,52 +73,10 @@
     height: 30vh;
     margin: 10px;
   }
-  /*.BackgroundMain
-  {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      height: 40vh;
-      background-size: cover; //ocupa 100% da imagem, tamanho original.
-      background-image: url('../../assets/backgroundMenor.png');
-      background-repeat: no-repeat;      
-
+}
+@media (max-width: 375px) {
+  .card {
+    width: 70vw;
+    height: 40vh;
   }
-  .titleMain
-  {
-      width: 100%;
-      text-align: center;
-      color: white;
-      padding-top: 21%;
-      padding-right: 6%;
-  }
-  .container //aqui é a tua (caixa) 
-  {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      align-items: center;
-
-      .titleCards
-      {
-          width: 100vw;
-          color: #005695;
-      }
-  }
-  .cards //aqui é a caixa onde fica todos os cards
-  {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: space-evenly;
-  }
-  .card //aqui é o card
-  {
-      width: 80vw;
-      height: 40vh;
-      margin-top: 15px;
-      margin-bottom: 15px;
-  }*/
 }/*# sourceMappingURL=inicio.module.css.map */
