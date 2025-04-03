@@ -1,18 +1,41 @@
 import s from './livrosDoados.module.scss'
-import livro from '../../assets/livro1.png'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
 
-export default function LivrosDoados()
-{
-    return(
+export default function LivrosDoados() {
+    const [livros, setLivros] = useState([])
+
+    const puxarLivros = async () => {
+        try {
+            const resposta = await axios.get("https://api-livros-vai-na-web-u13s.onrender.com/livros")
+            setLivros(resposta.data)
+        } catch (error) {
+            console.error("Erro ao buscar livros:", error)
+        }
+    }
+
+    useEffect(() => {
+        puxarLivros()
+    }, [])
+
+    return (
         <main>
             <h2 className={s.title}>Livros Doados</h2>
             <section className={s.cardLivrosDoados}>
-                <section className={s.cardLivro}>
-                    <img src={livro} alt="imgLivro"/>
-                    <p>O protagonista</p>
-                    <p>Susanne Andrade</p>
-                    <p>Ficção</p>
-                </section>
+                {livros.length > 0 ? (
+                    livros.map((item) => (
+                        <section key={item.id} className={s.cardLivro}>
+                            <img src={item.image_url} alt={item.titulo} />
+                            <div>
+                                <h3>{item.titulo}</h3>   
+                                <p>{item.autor}</p>
+                                <p>{item.genero}</p>
+                            </div>
+                        </section>
+                    ))
+                ) : (
+                    <p>Carregando livros...</p>
+                )}
             </section>
         </main>
     )
